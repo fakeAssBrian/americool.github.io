@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "First Post" (NEEDS EDIT AND FORMATING)
+title:  "First Post (NEEDS EDIT AND FORMATING)"
 date:   2016-03-15 15:26:36 -0500
 categories: coding, learning
 ---
