@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Bernie Brogrammers? (AM I RIGHT OR WHAT?)"
+title:  "Bernie Brogrammers?"
 date:   2016-03-30
 categories: Bernie Sanders, elections, programming, campaigning
 ---
