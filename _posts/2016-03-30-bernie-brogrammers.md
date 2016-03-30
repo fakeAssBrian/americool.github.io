@@ -29,3 +29,4 @@ One thing is clear, while tools like facebanking may still have limited effect (
 [Field The Bern]: https://fieldthebern.com/
 [berniefriendfinder]: http://www.berniefriendfinder.com/
 [r/codersforsaders]: https://www.reddit.com/r/CodersForSanders
+[Event Invitation Bookmark]: http://feelthebern.events/
