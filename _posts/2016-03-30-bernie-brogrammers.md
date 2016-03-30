@@ -27,5 +27,5 @@ One thing is clear, while tools like facebanking may still have limited effect (
 [r/SandersForPresident]: https://www.reddit.com/r/SandersForPresident/
 [berniepb]: https://www.berniepb.com/
 [Field The Bern]: https://fieldthebern.com/
-[berniefriendfinder]: https://berniefriendfinder.com/
+[berniefriendfinder]: http://www.berniefriendfinder.com/
 [r/codersforsaders]: https://www.reddit.com/r/CodersForSanders
