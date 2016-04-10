@@ -4,7 +4,7 @@ title:  "Bernie Brogrammers?"
 date:   2016-03-30
 categories: Bernie Sanders, elections, programming, campaigning
 ---
-*UPDATE: There is now, in addition to a much improved update of the "[Event Invitation Bookmark]" the new "[berniefriendfinder]" has a "pro" edition (at no cost,) which seems to seamlessly integrate the whole process. Pretty cool. Mind Blown. Etc.*
+**UPDATE:** *There is now, in addition to a much improved update of the "[Event Invitation Bookmark]" the new "[berniefriendfinder]" has a "pro" edition (at no cost,) which seems to seamlessly integrate the whole process. Pretty cool. Mind Blown. Etc.*
 
 So I’m going to write an article that’s at least in part about politics, and focuses on certain aspects of Bernie Sanders’s campaign. Your personal opinion and politics aren’t relevant, you don’t have to like or support him to take this article into consideration, and hopefully, you don’t even have to be politically-inclined. Obviously I’m fan, (that’s how I know about this,) but I don’t expect you to be, and that’s not really important to this discussion either.
 
