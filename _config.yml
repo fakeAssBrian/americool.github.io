@@ -9,7 +9,7 @@
 title: Abemerica's Foray Into Programming
 email: aberanderson@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  This where the description will be.
+  This is a blog where I talk about trying to be a programmer and how either awesome or embarssing that ends up being. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://americool.github.io" # the base hostname & protocol for your site
 twitter_username:
