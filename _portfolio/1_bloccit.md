@@ -134,4 +134,38 @@ The issue is that multiple labels have to be associated with posts and topics an
 
 Here we can imagine that an address can have multiple people (a couple or whole family) or even many businesses (picture a large shared office building), and at the same time, a business could have multiple address (chain locations, branches etc.) and a person certainly could as well (work, home, etc.) It's also fairly easy to see how some of these addresses could overlap. So in order to combine them we have our "join table." In this example, each table has it's descriptors (a string titling it basically,) and it's own unique id to keep track of it in the database. What the join table does is keep track of an associated address_id to link to an address, and has an associative_id which matches to the unique id for either business or person, and is told which it references using the "associative_type" string (business or person in this case.)
 
-In the case of bloccit, Address is replaced with label, the address join table is called "Lableings" (due to a naming convention I believe it's attributes are "lable_id", "labable_id", "labeable_type" - respective to the above example), and Buisness and Person are replaced with Topic and Post (both which have a number of other attributes.) Though it's mostly prebuilt "Rails magic" at work below, I've included some snippets of code to show how it is implemented. 
+In the case of bloccit, Address is replaced with label, the address join table is called "Lableings" (due to a naming convention I believe it's attributes are "lable_id", "labable_id", "labeable_type" - respective to the above example), and Buisness and Person are replaced with Topic and Post (both which have a number of other attributes.) Though it's mostly prebuilt "Rails magic" at work below, I've included some snippets of code to show how it is implemented:
+
+
+{% highlight ruby %}
+class Label < ActiveRecord::Base
+  has_many :labelings
+  has_many :topics, through: :labelings, source: :labelable, source_type: :Topic
+  has_many :posts, through: :labelings, source: :labelable, source_type: :Post
+
+  def self.update_labels(label_string)
+    return Label.none if label_string.blank?
+
+    label_string.split(",").map do |label|
+      Label.find_or_create_by(name: label.strip)
+    end
+  end
+end
+{% endhighlight %}
+
+(SAY SOME STUFF HERE)
+
+{% highlight ruby %}
+class Labeling < ActiveRecord::Base
+  belongs_to :labelable, polymorphic: true
+  belongs_to :label
+end
+{% endhighlight %}
+
+(AND A LITTLE HERE AND END IT)
+
+
+Results: (Explain how it worked, what I learned, include screenshots)
+
+
+Conclusion: Overall until the later sections, this project was not exceptionally difficult, though it was a crucial learning experience. However it should be stressed that the scope of the project was actually much larger than the code examples given here. It was an excellent example of how Rails works, and a particularly good example of the type of projects rails is incredibly efficient and creating. It definitely serves as good ground work to future attempts to work within the rails framework and serves as a good basic guide for TDD, working with databases, associating models, and working within the MVC architecture. For future projects, I think it would be valuable to work on something that is less redundant to existing web-based-software, and while perhaps less broad in scope, has a deeper and more valuable exploration of certain features and functionality.

@@ -22,13 +22,13 @@ theme_settings:
   email_address: # Full email address, e.g. "sam@example.com"
   behance:
   bitbucket:
-  dribbble: "joeykirk"
-  facebook: "joeykirk"
+  dribbble:
+  facebook:
   flickr:
   github: "americool"
   google_plus:
-  instagram: "joeykirk"
-  linkedin:  # Full URL
+  instagram:
+  linkedin:  "https://www.linkedin.com/in/abe-anderson-60083940?trk=nav_responsive_tab_profile" # Full URL
   pinterest:
   reddit:
   soundcloud:
