@@ -12,13 +12,15 @@ layout: default
 
   <div class="work">
     <h2>My Work</h2>
-    {% for project in site.portfolio limit:20 %}
-        <li>
-          <img src="{{ project.thumbnail-path }}" alt="{{ project.title }}"/>
-          <a href="{{ project.url }}">{{ project.title }}</a>
-          <p>{{ project.short-description }}</p>
-        </li>
-    {% endfor %}
+    <ul class="bxslider">
+      {% for project in site.portfolio %}
+          <li class = "project-slides">
+            <img src="{{ project.thumbnail-path }}" alt="{{ project.title }}" alt="picture"/>
+            <a class="title_link" href="{{ project.url }}">{{ project.title }}</a>
+            <p class="descriptor">{{ project.short-description }}</p>
+          </li>
+      {% endfor %}
+    </ul>
   </div>
 
   <div class="posts">
