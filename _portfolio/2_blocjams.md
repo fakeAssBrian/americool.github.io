@@ -305,17 +305,21 @@ The (*repetitive*, but nonetheless functional) album page:
 ...and the full player page:
 ![blocjams_2](/img/blocjams_2.png){:class="img-responsive"}
 
-Lastly let's look at two quick videos. The first displays the player's mouse-over functionality:
+Lastly let's look at two quick videos. (Note the circle that appears on each click is a quicktime generated effect and not part of the application itself.) The first displays the player's mouse-over functionality:
 
 ![blocjams_demo_1](/img/blocjams_demo_1.gif)
 
-and here is the seek bar in action: 
+and here is the seek bar in action:
 
 ![blocjams_demo_2](/img/blocjams_demo_2.gif)
 
 
 
 **Conclusion:**
+
+While the initial layout of the page was very simple in terms of following step-by step html/css instructions, it was a good introduction styling. The project became most challenging when implementing the mouse-over and click-responsive player, both in plain javascript and jQuery. This served as a very good introduction to front end generally speaking, and an especially  good way to acquaint oneself with the advantages and power of the jQuery library. While I'm not sure how much I will use all of these details in future projects, it was a valuable learning experience in terms of logic and problem solving and also serves as a good point of reference when working on another front end challenge. In the future, I'll be glad I have experience working with click and mouseover functionality, abstract and relative page measurements based on user behavior, as well as experiencing working with a library that allows one to play audio.
+
+Here is a link to the project's [github page] if you'd like to see the full code.
 
 [Github Page]: https://github.com/americool/bloc-jams
 [Bloccit]: /_portfoilo/1_bloccit.md
