@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Webflow
+title: Blocmarks
 feature-img: "img/sample_feature_img.png"
 thumbnail-path: "https://d13yacurqjgara.cloudfront.net/users/3217/screenshots/1686132/webflow_landingpage_1x.jpg"
 short-description: An email-responsive tool for managing, storing, and categorizing bookmarks.
