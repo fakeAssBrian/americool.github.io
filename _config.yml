@@ -5,7 +5,7 @@ url: "0.0.0.0" # the base hostname & protocol for your site
 theme_settings:
   # Meta
   title: Abe Anderson
-  permalink: /:year/:month/:title
+  permalink: pretty
   avatar: avatar.png
   gravatar: 664e9dcb8e0711a1c42be1344640cb88
   description: "Abe Anderson's digital portfolio showcasing Software-Engineering and Web-Devlopment experience" # used by search engines
