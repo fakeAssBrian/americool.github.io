@@ -15,7 +15,8 @@ categories: react, react-native, Navigation
 
   Now let's jump ahead and imagine you've got a basic static React-Native app running on your IOS simulator. Here's an example of mine:
 
-  ![vndr_screenshot](/img/navigation_vndr_screenshot.png){:class="img-responsive"}
+  {: .center }
+  ![vndr_screenshot](/img/navigation_vndr_screenshot.png)
 
   I'm working on what I'd call a "Vendor Locator", but we can loosely think of it as an app that will display a list of items with descriptions and their respective distance. Note this data is currently hard-coded into firebase, and isn't actually pulling real locations for the time being. We've got a ListView, a decent wrapper/card layout, and a few buttons. But let's say I want these buttons to actually take the user places. Now what? Well I first looked at [React-Native's Navigation Documentation]. Now, while I suspect this in itself might present a solution for a more experienced developer, for someone like me who is less experienced, also *really* hates combing through documentation, learns better by functional examples, and tends to be a little ADD, this can leave you feeling confused and at the bottom of the rabbit hole of self doubt and the imposter syndrome. Luckily, that Udemy course I linked to above has a pretty practical solution. As the author of the course notes, there really isn't a clear or fundamental nav system for react-native, but he offers a nice walk through for one approach, and I've been pretty happy with it so far. The downside I suppose is that he doesn't discuss it till near the end of the course. So I'll offer the basic bones of it here:
 
@@ -86,6 +87,7 @@ categories: react, react-native, Navigation
 
   And **VOILA NAVIGATION**
 
+  {: .center }
   ![nav_gif](/img/nav_recording.gif)
 
   It really is *that* simple.  
