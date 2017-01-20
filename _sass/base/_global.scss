@@ -115,3 +115,40 @@ img[align=left] {
 img[align=right] {
   margin-left: 3%;
 }
+
+
+// form stuff
+#form-header {
+  text-align: center;
+  padding-bottom: 2vh;
+}
+
+.flex {
+  display: inline-flex;
+  border: 3px solid;
+  align-self: center;
+}
+
+input[type=text] {
+  height: 7vh;
+  width: 30vw;
+  text-align: center;
+}
+input[type=email] {
+  height: 7vh;
+  width: 30vw;
+  text-align: center;
+}
+textarea {
+  border: 3px solid;
+  height: 30vh;
+  width: 60vw;
+}
+input[type=submit] {
+  display: block;
+  height: 5vh;
+  width: 12vw;
+  margin: auto;
+  border: 3px solid;
+  background-color: #00e6e6;
+}
