@@ -48,7 +48,7 @@ categories: react, react-native, Navigation
 
   const RouterComponent = () => {
     return (
-      <Router sceneStyle={{ paddingTop: 65 }}>
+      <Router>
         <Scene key="list">
           <Scene key="VndrList" component={VndrList} title="List View" />
         </Scene>
@@ -69,7 +69,7 @@ categories: react, react-native, Navigation
 
   {% endhighlight %}
 
-  Okay, there are a few things to note here. As we can see we create a router component and start our return with a <Router> wrapper (I followed the udemy instructions and provided a little padding to make it look nicer.) Ignore the first <Scene key> tag for a moment (*I'll explain in a second*) and let's look at the more detailed Scene key nested below it. This is the important part. We pass three things in here, the first (key) references the name we use to define the path when we push the user over to that screen. The component points to one of the imported component views above, stating what to render once the user is pushed to a new screen. Lastly the title appears in the default header provided by the navigator. I should also note, that while by default, the initial or landing "page" is defined in a top down order, you can pass an 'initial' property to any of these scenes to make it the default view/landing.
+  Okay, there are a few things to note here. As we can see we create a router component and start our return with a <Router> wrapper. Ignore the first <Scene key> tag for a moment (*I'll explain in a second*) and let's look at the more detailed Scene key nested below it. This is the important part. We pass three things in here, the first (key) references the name we use to define the path when we push the user over to that screen. The component points to one of the imported component views above, stating what to render once the user is pushed to a new screen. Lastly the title appears in the default header provided by the navigator. I should also note, that while by default, the initial or landing "page" is defined in a top down order, you can pass an 'initial' property to any of these scenes to make it the default view/landing.
 
   Now, what about those wrapping Scene key elements that don't have a component or title options?  Well these are here because, by default if a user navigates from one scene to the next inside the router component. The navigator will offer a "back button"  on the left side of the header that the user can click to go back to the previous scene. There a number of instances where we wouldn't want this functionality (*say after entering data and submitting a form*). Wrapping the Scene Keys in outer Scene Key components prevents this. (Though it should be noted that if we nested two sibling components inside an outer scene key, the 'back-button' behavior would still continue between them.) Now there's really one last step to make it all go. We have to call a function to push the user to a new scene. Basically, anywhere we want to do this we need two steps, First at the top we import 'Actions':
 
