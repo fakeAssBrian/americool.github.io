@@ -10,7 +10,7 @@ feature-img: "img/sample_feature_img.png"
   <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
   <!-- #2 -->
   <div class="flex">
-    <input type='hidden' name='redirect_to' value='full-url/thank-you/' />
+    <input type='hidden' name='redirect_to' value='http://abeanderson.me/thank-you/' />
     <!-- build local thank you page  -->
     <input type='text' name='name' placeholder='Your Full Name' />
     <input type='email' name='email' placeholder='Your E-mail Address' />

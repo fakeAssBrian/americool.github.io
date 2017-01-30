@@ -1,5 +1,5 @@
 # SITE CONFIGURATION
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "http://abeanderson.me" # the subpath of your site, e.g. /blog/
 permalink: /:title/
 url: "0.0.0.0" # the base hostname & protocol for your site
 # THEME-SPECIFIC CONFIGURATION
@@ -40,7 +40,7 @@ theme_settings:
 
   # Scripts
   google_analytics: "UA-88747140-1" # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname:
+  disqus_shortname: "americool"
   katex: true # Enable if using math markup
 
   # Localization strings
