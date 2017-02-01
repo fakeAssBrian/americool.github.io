@@ -1,21 +1,23 @@
 // Header text feature
 .call-out {
   @extend %padding-regular;
-  display: inline-block;
+  display: flex;
   width: 100%;
+  height: 150px;
   background-color:$header-desc-background-color;
   background-size: cover;
   font-size: 1.2em;
   text-align: center;
+  align-items: center;
   color: $header-desc-text-color;
 }
 .call-out p:last-child {
   margin-bottom: 0;
+
 }
 // Post listing
 .posts {
   h2 {
-    padding:5% 20% 0%;
     text-align: center;
   }
   .post-teaser {
@@ -39,7 +41,7 @@
   h2 {
     text-align: center;
   }
-  @extend %padding-regular;
+  padding: 50px;
   background-size: $feature-image-size;
   border-bottom: 1px solid $border-color;
   li {
